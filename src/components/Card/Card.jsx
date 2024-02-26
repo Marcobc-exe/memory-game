@@ -18,40 +18,39 @@ export const Card = ({
 
   const stylesByCardsGame = {
     12: `
-      grid mt-10 absolute left-[50%] translate-x-[-50%] w-[1000px]
+      grid mt-10 absolute left-[50%] translate-x-[-50%] w-[600px]
       ${gridColsClasses[cols]} laptop:w-[800px] tabletXL:w-[700px]
-      tabletL:w-[550px] mobileL:w-[400px] mobileL:gap-[10px]
+      tabletL:w-[550px] mobileL:w-[400px] gap-[12px]
       mobileM:w-[365px] mobileS:w-[300px] mobileS:gap-[3px]
     `,
     16: `
-      grid mt-10 absolute left-[50%] translate-x-[-50%] w-[1000px]
-      ${gridColsClasses[cols]} w-[700px] tabletL:w-[550px] tablet:w-[500px]
+      grid mt-10 absolute left-[50%] translate-x-[-50%] w-[500px] gap-[12px]
+      ${gridColsClasses[cols]} tabletL:w-[550px] mobileS:gap-[5px]
       mobileL:w-[400px] mobileL:gap-[10px] mobileM:w-[365px] mobileS:w-[300px]
-      mobileS:gap-[5px]
     `,
     20: `
-      grid mt-10 absolute left-[50%] translate-x-[-50%] w-[1000px]
-      ${gridColsClasses[cols]} w-[850px] laptop:w-[800px] tabletXL:w-[700px]
+      grid mt-10 absolute left-[50%] translate-x-[-50%] w-[600px] gap-[12px]
+      ${gridColsClasses[cols]} laptop:w-[800px] tabletXL:w-[700px]
       tabletL:w-[550px] mobileL:w-[400px] mobileM:w-[365px] mobileS:w-[300px]
       mobileS:gap-[5px] mobileL:gap-[5px]
     `,
     24: `
-      grid mt-10 absolute left-[50%] translate-x-[-50%] w-[1000px]
+      grid mt-10 absolute left-[50%] translate-x-[-50%] w-[600px] gap-[12px]
       ${gridColsClasses[cols]} laptop:w-[800px] tabletXL:w-[700px]
       tabletL:w-[400px] mobileL:w-[400px] mobileM:w-[365px] tabletL:gap-[3px]
       mobileS:w-[300px]
     `,
     30: `
-      grid mt-10 absolute left-[50%] translate-x-[-50%] w-[1000px]
+      grid mt-10 absolute left-[50%] translate-x-[-50%] w-[600px] gap-[12px]
       ${gridColsClasses[cols]} laptop:w-[800px] tabletXL:w-[650px]
       tabletXL:gap-[6px] tabletL:w-[480px] tabletL:gap-[3px] mobileL:w-[410px]
-      mobileM:w-[350px] mobileS:w-[315px] mobileS:gap-[2px]
+      mobileM:w-[350px] mobileS:w-[300px] mobileS:gap-[2px]
     `,
     40: `
-      grid mt-10 absolute left-[50%] translate-x-[-50%] w-[1000px]
+      grid mt-10 absolute left-[50%] translate-x-[-50%] w-[600px] gap-[10px]
       ${gridColsClasses[cols]} laptop:w-[800px] tabletXL:w-[600px]
       tabletXL:gap-[5px] tablet:w-[500px] tablet:gap-[3px] mobileL:w-[400px] 
-      mobileM:w-[365px] mobileS:w-[315px] mobileS:gap-[2px]
+      mobileM:w-[365px] mobileS:w-[300px] mobileS:gap-[2px]
     `,
   };
 

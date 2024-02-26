@@ -3,7 +3,7 @@ import { NavbarMenu } from "../NavbarMenu/NavbarMenu";
 import { BtnUser } from "../BtnUser/BtnUser";
 import { NavbarTitle } from "../NavbarTitle/NavbarTitle";
 import { UserHistoryScore } from "../UserHistoryScore/UserHistoryScore";
-import { WorlUserScoresHistory } from "../WorldUserScoresHistory/WorldUserScoresHistory";
+import { WorldUserScoresHistory } from "../WorldUserScoresHistory/WorldUserScoresHistory";
 
 export const Navbar = ({ handleView, userBody }) => {
   const menuRef = useRef(null);
@@ -62,7 +62,7 @@ export const Navbar = ({ handleView, userBody }) => {
       if (findUser) setShowHistoryBtn(true);
       setShowWorldScoreBtn(true)
     } else {
-      setShowWorldScoreBtn(true)
+      setShowWorldScoreBtn(false)
     }
   };
 
@@ -109,7 +109,7 @@ export const Navbar = ({ handleView, userBody }) => {
         showTableUserHistory={showTableUserHistory}
         handleViewTableHistory={handleViewTableHistory}
       />
-      <WorlUserScoresHistory
+      <WorldUserScoresHistory
         showTableWorldScore={showTableWorldScore}
         handleViewTableWorldHistory={handleViewTableWorldHistory}
       />

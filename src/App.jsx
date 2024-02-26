@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./App.css";
 import { SignUpView } from "./components/SignUpView/SignUpView";
 import { TableView } from "./components/TableView/TableView";
 import { Menu } from "./components/Menu/Menu";

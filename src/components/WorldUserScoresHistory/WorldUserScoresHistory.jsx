@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { XCircle, GlobeHemisphereWest } from "@phosphor-icons/react";
 
-export const WorlUserScoresHistory = ({
+export const WorldUserScoresHistory = ({
   showTableWorldScore,
   handleViewTableWorldHistory,
 }) => {
@@ -10,9 +10,12 @@ export const WorlUserScoresHistory = ({
   useEffect(() => {
     if (!showTableWorldScore) return;
     const scoreHistory = localStorage.getItem("scoreHistory");
-    const parseScoreHistory = JSON.parse(scoreHistory).sort((a, b) =>
-      a.username.localeCompare(b.username)
-    );
+
+    if (scoreHistory == null) return;
+
+    const parseScoreHistory = JSON.parse(scoreHistory)
+      .sort((a, b) => a.cardsGame - b.cardsGame)
+      .sort((a, b) => a.misses - b.misses);
 
     setListScoresHistory(parseScoreHistory);
   }, [showTableWorldScore]);
@@ -29,7 +32,7 @@ export const WorlUserScoresHistory = ({
           <div
             className="
             bg-white text-black w-[500px] h-[450px] rounded-[12px] p-[12px]
-              absolute left-[50%] translate-x-[-50%] top-[400%]
+              relative left-[40%] translate-x-[-50%] top-[150%]
               mobileL:w-[300px] z-[10]
             "
           >
@@ -48,10 +51,20 @@ export const WorlUserScoresHistory = ({
               <XCircle size={30} color="gray" />
             </button>
 
+            <div className="bg-red-300 flex justify-center mt-[26px]">
+              <select>
+                <option value="12" key="12">12 cards</option>
+                <option value="16" key="16">16 cards</option>
+                <option value="20" key="20">20 cards</option>
+                <option value="24" key="24">24 cards</option>
+                <option value="30" key="20">30 cards</option>
+                <option value="40" key="40">40 cards</option>
+              </select>
+            </div>
             <div
               className="
                 absolute left-[50%] translate-x-[-50%] w-[420px] flex flex-col
-                top-[24%] gap-[16px] h-[280px] overflow-auto overflow-x-hidden
+                top-[30%] gap-[16px] h-[280px] overflow-auto overflow-x-hidden
               "
             >
               {listScoresHistory.length &&

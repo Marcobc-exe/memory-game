@@ -32,7 +32,7 @@ export const UserHistoryScore = ({
           <div
             className="
             bg-white text-black w-[450px] h-[400px] rounded-[12px] p-[12px]
-              absolute left-[50%] translate-x-[-50%] top-[400%]
+              relative left-[40%] translate-x-[-50%] top-[150%]
               mobileL:w-[300px] z-[10]
             "
           >

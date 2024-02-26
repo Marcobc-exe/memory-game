@@ -1,0 +1,12 @@
+.container-form{
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  width: 300px;
+  gap: 25px;
+  align-items: center;
+  position: relative;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}

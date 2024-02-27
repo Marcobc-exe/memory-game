@@ -69,10 +69,10 @@ export const UserHistoryScore = ({
                     "
                   >
                     <span className="tracking-tight mobileL:text-sm">{index + 1}.</span>
-                    <span className="tracking-tight mobileL:text-sm">Game: {score.cardsGame}</span>
+                    <span className="tracking-tight mobileL:text-sm">{score.cardsGame} cards</span>
                     <span className="tracking-tight mobileL:text-sm">Hits: {score.hits}</span>
                     <span className="tracking-tight mobileL:text-sm">Misses: {score.misses}</span>
-                    <span className="tracking-tight mobileL:text-sm">Date: {score.date}</span>
+                    <span className="tracking-tight mobileL:text-sm">{score.date}</span>
                   </div>
                 ))}
             </div>

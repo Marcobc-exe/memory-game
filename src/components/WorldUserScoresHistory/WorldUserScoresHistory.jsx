@@ -32,16 +32,19 @@ export const WorldUserScoresHistory = ({
           <div
             className="
             bg-white text-black w-[500px] h-[450px] rounded-[12px] p-[12px]
-              relative left-[40%] translate-x-[-50%] top-[150%]
-              mobileL:w-[300px] z-[10]
+              relative left-[40%] translate-x-[-50%] top-[150%] tablet:left-[28%]
+              mobileL:w-[300px] z-[10] laptop:left-[30%] tabletL:left-[20%] mobileL:left-[23%]
             "
           >
             <GlobeHemisphereWest
               weight="thin"
               size={25}
-              className="absolute left-[17%] top-[6.5%]"
+              className="
+                absolute left-[17%] top-[6.5%] tablet:relative m-0
+                tablet:top-[0%] tablet:left-[50%] tablet:translate-x-[-50%]
+              "
             />
-            <p className="text-center text-2xl mt-[8px]">
+            <p className="text-center text-2xl mt-[8px] tablet:mt-[4px]">
               World user scores history
             </p>
             <button
@@ -51,7 +54,12 @@ export const WorldUserScoresHistory = ({
               <XCircle size={30} color="gray" />
             </button>
 
-            <div className="bg-red-300 flex justify-center mt-[26px]">
+            <div
+              className="
+              bg-red-300 flex justify-center mt-[26px] tablet:mt-[16px]
+              mobileL:mt-[10px]
+              "
+            >
               <select>
                 <option value="12" key="12">12 cards</option>
                 <option value="16" key="16">16 cards</option>
@@ -65,19 +73,23 @@ export const WorldUserScoresHistory = ({
               className="
                 absolute left-[50%] translate-x-[-50%] w-[420px] flex flex-col
                 top-[30%] gap-[16px] h-[280px] overflow-auto overflow-x-hidden
+                tablet:w-[340px] mobileL:w-[260px] mobileM:w-[230px] mobileM:top-[35%]
               "
             >
               {listScoresHistory.length &&
                 listScoresHistory.map((score, index) => (
                   <div
                     key={index}
-                    className="flex gap-[5px] border-b-[1px] border-gray-400 justify-around"
+                    className="
+                      flex gap-[5px] border-b-[1px] border-gray-400 justify-around
+                      tablet:min-h-[54px] tablet:gap-[3px]
+                    "
                   >
-                    <span>{score.username}</span>
-                    <span>Game: {score.cardsGame}</span>
-                    <span>Hits: {score.hits}</span>
-                    <span>Misses: {score.misses}</span>
-                    <span>Date: {score.date}</span>
+                    <span className="tracking-tight mobileL:text-sm">{score.username}</span>
+                    <span className="tracking-tight mobileL:text-sm">Game: {score.cardsGame}</span>
+                    <span className="tracking-tight mobileL:text-sm">Hits: {score.hits}</span>
+                    <span className="tracking-tight mobileL:text-sm">Misses: {score.misses}</span>
+                    <span className="tracking-tight mobileL:text-sm">Date: {score.date}</span>
                   </div>
                 ))}
             </div>

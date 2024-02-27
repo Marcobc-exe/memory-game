@@ -17,13 +17,13 @@ export default {
           max: "590px",
         },
         mobileL: {
-          max: "425px",
+          max: "430px",
         },
         mobileM: {
-          max: "375px",
+          max: "390px",
         },
         mobileS: {
-          max: "325px",
+          max: "360px",
         },
       },
       boxShadow: {

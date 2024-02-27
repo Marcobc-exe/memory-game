@@ -8,7 +8,8 @@ export const Menu = ({ handleGame }) => {
       className="
         flex gap-10 w-[620px] flex-wrap relative mt-[50px]
         left-[50%] translate-x-[-50%] mobileL:w-[300px]
-        mobileL:gap-5 mobileL:mt-[20px] tabletL:w-[500px] tabletL:gap-5 justify-center
+        mobileL:gap-5 mobileL:mt-[20px] tabletL:w-[500px] 
+        tabletL:gap-5 justify-center
       "
     >
       {amountOfCards.map((num) => (

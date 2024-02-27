@@ -54,7 +54,7 @@ export const WorldUserScoresHistory = ({
               <XCircle size={30} color="gray" />
             </button>
 
-            <div
+            {/*<div
               className="
               bg-red-300 flex justify-center mt-[26px] tablet:mt-[16px]
               mobileL:mt-[10px]
@@ -68,12 +68,12 @@ export const WorldUserScoresHistory = ({
                 <option value="30" key="20">30 cards</option>
                 <option value="40" key="40">40 cards</option>
               </select>
-            </div>
+            </div>*/}
             <div
               className="
                 absolute left-[50%] translate-x-[-50%] w-[420px] flex flex-col
-                top-[30%] gap-[16px] h-[280px] overflow-auto overflow-x-hidden
-                tablet:w-[340px] mobileL:w-[260px] mobileM:w-[230px] mobileM:top-[35%]
+                top-[25%] gap-[16px] h-[280px] overflow-auto overflow-x-hidden
+                tablet:w-[340px] mobileL:w-[260px] mobileM:w-[230px] mobileM:top-[30%]
               "
             >
               {listScoresHistory.length &&

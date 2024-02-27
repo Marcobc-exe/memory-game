@@ -208,12 +208,9 @@ P.version="2.30.1";P2(he);P.fn=N;P.min=Sv;P.max=xv;P.now=_v;P.utc=Bt;P.unix=Kw;P
                 absolute left-[17%] top-[6.5%] tablet:relative m-0\r
                 tablet:top-[0%] tablet:left-[50%] tablet:translate-x-[-50%]\r
               `}),w.jsx("p",{className:"text-center text-2xl mt-[8px] tablet:mt-[4px]",children:"World user scores history"}),w.jsx("button",{onClick:t,className:"absolute right-[10px] top-[10px]",children:w.jsx(Pc,{size:30,color:"gray"})}),w.jsx("div",{className:`\r
-              bg-red-300 flex justify-center mt-[26px] tablet:mt-[16px]\r
-              mobileL:mt-[10px]\r
-              `,children:w.jsxs("select",{children:[w.jsx("option",{value:"12",children:"12 cards"},"12"),w.jsx("option",{value:"16",children:"16 cards"},"16"),w.jsx("option",{value:"20",children:"20 cards"},"20"),w.jsx("option",{value:"24",children:"24 cards"},"24"),w.jsx("option",{value:"30",children:"30 cards"},"20"),w.jsx("option",{value:"40",children:"40 cards"},"40")]})}),w.jsx("div",{className:`\r
                 absolute left-[50%] translate-x-[-50%] w-[420px] flex flex-col\r
-                top-[30%] gap-[16px] h-[280px] overflow-auto overflow-x-hidden\r
-                tablet:w-[340px] mobileL:w-[260px] mobileM:w-[230px] mobileM:top-[35%]\r
+                top-[25%] gap-[16px] h-[280px] overflow-auto overflow-x-hidden\r
+                tablet:w-[340px] mobileL:w-[260px] mobileM:w-[230px] mobileM:top-[30%]\r
               `,children:n.length&&n.map((s,i)=>w.jsxs("div",{className:`\r
                       flex gap-[5px] border-b-[1px] border-gray-400 justify-around\r
                       tablet:min-h-[54px] tablet:gap-[3px]\r

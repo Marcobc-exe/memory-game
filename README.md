@@ -1,5 +1,5 @@
 # Memory Game
-Welcome to the memory game documentation. I hope you have enjoyed the game, if you haven't played it yet I leave the link
+Welcome to the Memory Game Documentation. I hope you have enjoyed the game, if you haven't played it yet I leave the link here:
 <https://marcobc-exe.github.io/memory-game/> 
 
 ### Get started
